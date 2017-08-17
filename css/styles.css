@@ -6,7 +6,7 @@
   margin: 0 auto;
 }
 .header-wrapper {
-  padding: 15px 0;
+  padding: 10px 0 20px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -61,13 +61,13 @@
   -webkit-box-shadow: -4px 8px 8px 0px rgba(55, 53, 50, 0.14);
   -moz-box-shadow: -4px 8px 8px 0px rgba(55, 53, 50, 0.14);
   box-shadow: -4px 8px 8px 0px rgba(55, 53, 50, 0.14);
-  z-index: 1000;
+  z-index: 100;
 }
 .header-wrapper .menu .dropdown-menu li {
   display: none;
   background: white;
-  z-index: 1000;
   margin: 0;
+  z-index: 1000;
 }
 .header-wrapper .menu .dropdown-menu li:nth-child(1) {
   border-top: 2px solid white;
@@ -91,24 +91,24 @@
 .header-wrapper .tel-first {
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
-  display: block;
-  text-align: center;
-  padding: 5px 0;
+  text-align: right;
+  padding: 2px 0;
 }
-.header-wrapper .tel-first:hover {
-  cursor: pointer;
+.header-wrapper .tel-first .city {
+  margin-right: 30px;
+  color: #777777;
+  font-weight: 500;
 }
 .header-wrapper .tel-second {
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
-  display: block;
-  text-align: center;
-  padding: 5px 0;
-  display: none;
-  margin-left: -20px;
+  text-align: right;
+  padding: 2px 0;
 }
-.header-wrapper .tel-second:hover {
-  cursor: pointer;
+.header-wrapper .tel-second .city {
+  margin-right: 30px;
+  color: #777777;
+  font-weight: 500;
 }
 .header-wrapper .add-tel-btn {
   display: inline-block;
@@ -157,7 +157,7 @@
 .slider-wrapper {
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 250px;
   overflow: hidden;
 }
 .slider-wrapper img {
@@ -177,7 +177,7 @@
 .slider-wrapper .lft-arrow {
   position: absolute;
   width: 70px;
-  top: 20%;
+  top: 10%;
   z-index: 200;
 }
 .slider-wrapper .lft-arrow:hover {
@@ -186,7 +186,7 @@
 .slider-wrapper .rt-arrow {
   position: absolute;
   width: 70px;
-  top: 20%;
+  top: 10%;
   z-index: 200;
   right: 0px;
 }
@@ -198,16 +198,16 @@
   display: flex;
   flex-direction: column;
   width: 50%;
-  top: 90px;
-  left: 150px;
-  padding: 20px 0 0 20px;
+  top: 40px;
+  left: 140px;
+  padding: 10px 0 0 15px;
   border-left: 2px solid rgba(255, 255, 255, 0.8);
   border-top: 2px solid rgba(255, 255, 255, 0.8);
 }
 .slider-wrapper .slider-content-wrapper .slider-content {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 29px;
   color: white;
   text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.2);
 }
@@ -233,7 +233,7 @@
   margin-top: 40px;
 }
 .slider-wrapper .slider-content-wrapper .slider-btn:hover {
-  background-color: #07a0d4;
+  background: #07a0d4;
   transition: 0.5s;
   -webkit-box-shadow: -2px 3px 5px 0px rgba(50, 50, 50, 0.4);
   -moz-box-shadow: -2px 3px 5px 0px rgba(50, 50, 50, 0.4);
@@ -267,48 +267,53 @@
 }
 .benefits-wrapper .num-wrapper .num {
   font-family: 'Open Sans', sans-serif;
-  font-size: 100px;
+  font-size: 90px;
   font-weight: 700;
 }
 .benefits-wrapper .num-wrapper .num-technology {
   background: -webkit-linear-gradient(#ffca4f, #fcd988, #f1f7f9, #ffffff);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  color: #ffca4f;
 }
 .benefits-wrapper .num-wrapper .num-graduation {
   background: -webkit-linear-gradient(#1a91a1, #65b6c1, #f1f7f9, #ffffff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  color: #1a91a1;
 }
 .benefits-wrapper .num-wrapper .num-teachers {
   background: -webkit-linear-gradient(#84dbff, #bae2f3, #f1f7f9, #ffffff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  color: #84dbff;
 }
 .benefits-wrapper .num-wrapper .num-projects {
   background: -webkit-linear-gradient(#ffca4f, #fcd988, #f1f7f9, #ffffff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  color: #ffca4f;
 }
 .benefits-wrapper .num-wrapper img {
   margin-top: -40px;
-  width: 140px;
+  width: 135px;
   margin-bottom: 10px;
+  z-index: 10;
 }
 .benefits-wrapper .num-wrapper .num-ico-teacher {
   margin-top: -52px;
-  width: 163px;
+  width: 158px;
   margin-bottom: 0;
 }
 .benefits-wrapper .num-wrapper .num-text {
   width: 200px;
-  color: #353535;
+  color: #484848;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 15px;
   text-align: center;
-  margin: 15px 15px;
+  margin: 12px 15px;
 }
 .section-title {
   width: 100%;
@@ -327,6 +332,7 @@
   flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   margin-top: 20px;
 }
 .course-wrapper {
@@ -353,22 +359,33 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 14px;
-  background-color: #f9f9f9;
-  padding: 2px 0;
+  background-color: #f5f5f5;
+  padding: 3px 0;
+  color: #202020;
+}
+.course-main-desc {
+  font-family: 'Open Sans', sans-serif;
+  color: #505050;
+  font-size: 14px;
+  margin: 0 0 7px 0;
+  padding: 7px 0;
+  border-bottom: 1px solid #f5f5f5;
 }
 .course-desc {
-  font-family: 'Roboto', sans-serif;
-  color: #363636;
+  font-family: 'Open Sans', sans-serif;
+  color: #505050;
   font-size: 14px;
+  margin: 2px 0;
 }
 .course-price {
   color: #EE0000;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 15px;
+  margin-top: 15px;
 }
 .course-price .old-price {
-  color: #363636;
+  color: #202020;
   text-decoration: line-through;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
@@ -376,7 +393,7 @@
   margin: 0 10px;
 }
 .course-price .discount {
-  color: #363636;
+  color: #202020;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 14px;
@@ -490,6 +507,31 @@
   margin-right: 10px;
   font-size: 12px;
 }
+.about-us-wrapper {
+  margin-top: 100px;
+  color: #999999;
+}
+.about-us-wrapper .about-us-title {
+  width: 80%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.about-us-wrapper .about-us-content {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  line-height: 22px;
+  text-align: justify;
+  margin: 10px 0 15px 0;
+}
+.about-us-wrapper .about-us-subtitle {
+  font-family: 'Open Sans', sans-serif;
+  color: #484848;
+  font-size: 25px;
+}
 .footer {
   display: flex;
   margin: 70px 0 30px 0;
@@ -542,4 +584,26 @@
 .footer-map {
   width: 70%;
   overflow: hidden;
+}
+#toTop {
+  width: 50px;
+  height: 50px;
+  text-transform: uppercase;
+  border-radius: 50%;
+  color: #00BFFF;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 40px;
+  padding-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  vertical-align: center;
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+  z-index: 10000;
+}
+#toTop:hover {
+  transition: 1s;
 }

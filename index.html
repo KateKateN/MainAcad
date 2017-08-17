@@ -32,8 +32,7 @@
 					<div class="logo">
 						<img src="img/logo_test.jpg">
 					</div>
-				<!-- menu -->
-					<div class="menu-items">
+					<div class="menu-items" id="menu">
 						<ul class="main-menu">
 							<li><a href="#">про академію</a></li>
 							<li><a href="#">курси<i class="fa fa-caret-down" aria-hidden="true"></i></a>
@@ -48,12 +47,11 @@
 								</ul>
 							</li>
 							<li><a href="#">новини та акції</a></li>
-							<li><a href="#">контакти</a></li>
+							<li><a href="#contact">контакти</a></li>
 						</ul>
 					</div>
-				<!-- end of menu -->
 					<div class="contact">
-						<div class="tel-first">(073) 66-48-86<!-- <div class="add-tel-btn"> --><i class="fa fa-angle-down add-tel-btn" aria-hidden="true"></i></div><!-- </div> -->
+						<div class="tel-first"><span class="city">м. Львів</span>(073) 66-48-86</div>
 						<div class="tel-second">(073) 66-48-86 </div>
 						<div class="address"><span>Адреса:</span> вул. Чорновола, 67 (8 поверх)</div>
 
@@ -87,22 +85,22 @@
 <!-- nums -->
 <div class="benefits-wrapper">
 	<div class="num-wrapper">	
-		<div class="num num-technology">3</div>
+		<div class="num num-technology wow fadeInUp">3</div>
 		<img src="img/ico/technology.png">
 		<div class="num-text">роки навчаємо студентів різним технологіям</div>
 	</div>	
 	<div class="num-wrapper">	
-		<div class="num num-graduation">130</div>
+		<div class="num num-graduation wow fadeInUp">130</div>
 		<img src="img/ico/graduation.png">
 		<div class="num-text">наших випускників</div>
 	</div>	
 	<div class="num-wrapper">
-		<div class="num num-teachers">12</div>
+		<div class="num num-teachers wow fadeInUp">12</div>
 		<img src="img/ico/teachers.png" class="num-ico-teacher">
 		<div class="num-text">досвідчених викладачів</div>
 	</div>
 	<div class="num-wrapper">	
-		<div class="num num-projects">180</div>
+		<div class="num num-projects wow fadeInUp">180</div>
 		<img src="img/ico/projects.png">
 		<div class="num-text">проектів зроблено нашими студентами</div>
 	</div>
@@ -119,15 +117,13 @@
 			<div class="course-img"></div>
 			<div class="course-stars"></div>
 			<div class="course-title">Курс "Основи програмування"</div>
-			<div class="course-desc">Для людей без комп'ютерного освідуу сфері програмування.</div>
-			<br>
+			<div class="course-main-desc">Для людей без комп'ютерного освідуу сфері програмування.</div>
 			<div class="course-title">Тривалість</div>
 			<div class="course-desc"> 2 місяці</div>
 			<div class="course-title">Інтенсивність</div>
 			<div class="course-desc">2 рази/тиж. по 3 год.</div>
 			<div class="course-title">Час проведення</div>
 			<div class="course-desc">Вт, Ср (18:00 - 21:00)</div>
-			<br>
 			<div class="course-price">600 грн. <span class="old-price">1800 грн.</span><span class="discount">-40%</span></div>
 			<div class="course-offer">Залишилось <span class="offer-days">7 днів!</span></div>
 
@@ -138,34 +134,14 @@
 			<div class="course-img"></div>
 			<div class="course-stars"></div>
 			<div class="course-title">Курс "Основи програмування"</div>
-			<div class="course-desc">Для людей без комп'ютерного освідуу сфері програмування.</div>
-			<br>
-			<div class="course-title">Тривалість</div>
-			<div class="course-desc"> 2 місяці</div>
-			<div class="course-title">Інтенсивність</div>
-			<div class="course-desc">2 рази/тиж. по 3 год.</div>
-			<div class="course-title">Час проведення</div>
-			<div class="course-desc">Вт, Ср (18:00 - 21:00)</div>
-			<br>
-			<div class="course-price">600 грн. <span class="old-price">1800 грн.</span><span class="discount">-40%</span></div>
-			<div class="course-offer">Залишилось <span class="offer-days">7 днів!</span></div>
+			<div class="course-main-desc">Для людей без комп'ютерного освідуу сфері програмування.</div>
 
-			<a href="https://daneden.github.io/animate.css/" class="course-btn">Детальніше...</a>
-		</div>
-		
-			<div class="course-wrapper">
-			<div class="course-img"></div>
-			<div class="course-stars"></div>
-			<div class="course-title">Курс "Основи програмування"</div>
-			<div class="course-desc">Для людей без комп'ютерного освідуу сфері програмування.</div>
-			<br>
 			<div class="course-title">Тривалість</div>
 			<div class="course-desc"> 2 місяці</div>
 			<div class="course-title">Інтенсивність</div>
 			<div class="course-desc">2 рази/тиж. по 3 год.</div>
 			<div class="course-title">Час проведення</div>
 			<div class="course-desc">Вт, Ср (18:00 - 21:00)</div>
-			<br>
 			<div class="course-price">600 грн. <span class="old-price">1800 грн.</span><span class="discount">-40%</span></div>
 			<div class="course-offer">Залишилось <span class="offer-days">7 днів!</span></div>
 
@@ -176,15 +152,15 @@
 			<div class="course-img"></div>
 			<div class="course-stars"></div>
 			<div class="course-title">Курс "Основи програмування"</div>
-			<div class="course-desc">Для людей без комп'ютерного освідуу сфері програмування.</div>
-			<br>
+			<div class="course-main-desc">Для людей без комп'ютерного освідуу сфері програмування.</div>
+
 			<div class="course-title">Тривалість</div>
 			<div class="course-desc"> 2 місяці</div>
 			<div class="course-title">Інтенсивність</div>
 			<div class="course-desc">2 рази/тиж. по 3 год.</div>
 			<div class="course-title">Час проведення</div>
 			<div class="course-desc">Вт, Ср (18:00 - 21:00)</div>
-			<br>
+
 			<div class="course-price">600 грн. <span class="old-price">1800 грн.</span><span class="discount">-40%</span></div>
 			<div class="course-offer">Залишилось <span class="offer-days">7 днів!</span></div>
 
@@ -195,15 +171,15 @@
 			<div class="course-img"></div>
 			<div class="course-stars"></div>
 			<div class="course-title">Курс "Основи програмування"</div>
-			<div class="course-desc">Для людей без комп'ютерного освідуу сфері програмування.</div>
-			<br>
+			<div class="course-main-desc">Для людей без комп'ютерного освідуу сфері програмування.</div>
+
 			<div class="course-title">Тривалість</div>
 			<div class="course-desc"> 2 місяці</div>
 			<div class="course-title">Інтенсивність</div>
 			<div class="course-desc">2 рази/тиж. по 3 год.</div>
 			<div class="course-title">Час проведення</div>
 			<div class="course-desc">Вт, Ср (18:00 - 21:00)</div>
-			<br>
+
 			<div class="course-price">600 грн. <span class="old-price">1800 грн.</span><span class="discount">-40%</span></div>
 			<div class="course-offer">Залишилось <span class="offer-days">7 днів!</span></div>
 
@@ -214,15 +190,15 @@
 			<div class="course-img"></div>
 			<div class="course-stars"></div>
 			<div class="course-title">Курс "Основи програмування"</div>
-			<div class="course-desc">Для людей без комп'ютерного освідуу сфері програмування.</div>
-			<br>
+			<div class="course-main-desc">Для людей без комп'ютерного освідуу сфері програмування.</div>
+	
 			<div class="course-title">Тривалість</div>
 			<div class="course-desc"> 2 місяці</div>
 			<div class="course-title">Інтенсивність</div>
 			<div class="course-desc">2 рази/тиж. по 3 год.</div>
 			<div class="course-title">Час проведення</div>
 			<div class="course-desc">Вт, Ср (18:00 - 21:00)</div>
-			<br>
+
 			<div class="course-price">600 грн. <span class="old-price">1800 грн.</span><span class="discount">-40%</span></div>
 			<div class="course-offer">Залишилось <span class="offer-days">7 днів!</span></div>
 
@@ -233,15 +209,15 @@
 			<div class="course-img"></div>
 			<div class="course-stars"></div>
 			<div class="course-title">Курс "Основи програмування"</div>
-			<div class="course-desc">Для людей без комп'ютерного освідуу сфері програмування.</div>
-			<br>
+			<div class="course-main-desc">Для людей без комп'ютерного освідуу сфері програмування.</div>
+
 			<div class="course-title">Тривалість</div>
 			<div class="course-desc"> 2 місяці</div>
 			<div class="course-title">Інтенсивність</div>
 			<div class="course-desc">2 рази/тиж. по 3 год.</div>
 			<div class="course-title">Час проведення</div>
 			<div class="course-desc">Вт, Ср (18:00 - 21:00)</div>
-			<br>
+	
 			<div class="course-price">600 грн. <span class="old-price">1800 грн.</span><span class="discount">-40%</span></div>
 			<div class="course-offer">Залишилось <span class="offer-days">7 днів!</span></div>
 
@@ -252,15 +228,34 @@
 			<div class="course-img"></div>
 			<div class="course-stars"></div>
 			<div class="course-title">Курс "Основи програмування"</div>
-			<div class="course-desc">Для людей без комп'ютерного освідуу сфері програмування.</div>
-			<br>
+			<div class="course-main-desc">Для людей без комп'ютерного освідуу сфері програмування.</div>
+	
 			<div class="course-title">Тривалість</div>
 			<div class="course-desc"> 2 місяці</div>
 			<div class="course-title">Інтенсивність</div>
 			<div class="course-desc">2 рази/тиж. по 3 год.</div>
 			<div class="course-title">Час проведення</div>
 			<div class="course-desc">Вт, Ср (18:00 - 21:00)</div>
-			<br>
+
+			<div class="course-price">600 грн. <span class="old-price">1800 грн.</span><span class="discount">-40%</span></div>
+			<div class="course-offer">Залишилось <span class="offer-days">7 днів!</span></div>
+
+			<a href="https://daneden.github.io/animate.css/" class="course-btn">Детальніше...</a>
+		</div>
+		
+			<div class="course-wrapper">
+			<div class="course-img"></div>
+			<div class="course-stars"></div>
+			<div class="course-title">Курс "Основи програмування"</div>
+			<div class="course-main-desc">Для людей без комп'ютерного освідуу сфері програмування.</div>
+
+			<div class="course-title">Тривалість</div>
+			<div class="course-desc"> 2 місяці</div>
+			<div class="course-title">Інтенсивність</div>
+			<div class="course-desc">2 рази/тиж. по 3 год.</div>
+			<div class="course-title">Час проведення</div>
+			<div class="course-desc">Вт, Ср (18:00 - 21:00)</div>
+	
 			<div class="course-price">600 грн. <span class="old-price">1800 грн.</span><span class="discount">-40%</span></div>
 			<div class="course-offer">Залишилось <span class="offer-days">7 днів!</span></div>
 
@@ -315,9 +310,57 @@
 	</div>
 	<!-- ..... -->
 	<!-- end of news section -->
+	<!-- ABOUT US CONTENT -->
+	<div class="about-us-wrapper">
+		<div class="about-us-title"><h>MAIN ACADEMY – перша в Україні комплексна система підготовки сертифікованих фахівців для IT-компаній. </1></div>
+		<div class="about-us-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Ex magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Exce magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Exce magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excecepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
+		<div class="about-us-subtitle">Онлайн-система управління навчанням – віртуальне середовище</div>
+		<div class="about-us-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in  magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excereprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+		<div class="about-us-subtitle">Онлайн-система управління</div>
+		<div class="about-us-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+		<div class="about-us-subtitle">Онлайн-система управління навчанням</div>
+		<div class="about-us-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariat magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Exceur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
+	</div>	
+	<!-- ..... -->
+	<!-- footer -->
 	<footer>
 		<div class="footer">
-			<div class="footer-info">
+			<div class="footer-info" id="contact">
 				<div class="footer-logo"><img src="img/logo_test.jpg"></div>
 				<div class="footer-contact-title">Контактна інформація</div>
 				<div class="footer-tel"><i class="fa fa-phone" aria-hidden="true"></i>(073) 66-48-86</div>
@@ -340,7 +383,8 @@
 
 
 	</div>
-
+	<!-- to top btn -->
+	<div id = "toTop" class="hvr-bob"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
 
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>

@@ -1,10 +1,10 @@
 $(document).ready(function(){
 //add phone
-	$(".tel-first").click(function(){
-		$(".tel-second, .address").toggle();
-		$(".tel-second, .address").toggleClass("flipInX animated");
-		$(".add-tel-btn").toggleClass("fa-angle-up fa-angle-down");	
-	});
+	// $(".tel-first").click(function(){
+	// 	$(".tel-second, .address").toggle();
+	// 	$(".tel-second, .address").toggleClass("flipInX animated");
+	// 	$(".add-tel-btn").toggleClass("fa-angle-up fa-angle-down");	
+	// });
 // slider
 $('.main-slider').slick({
 	 	dots: true,
@@ -47,7 +47,34 @@ $('.main-slider').slick({
 	var texts = ['Запрошуємо в MAIN ACADEMY на навчання','Приєднуйся до групи Front End','День вікритих дверей кожний четвер','Набір в групу Front End'];
 	$(".slider-content").text(texts[0]);
 
+// UP BUTTON 
+function up() {  
+  var top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);  
+     if(top > 0) {  
+       window.scrollBy(0,((top+100)/-10));  
+       t = setTimeout('up()',20);  
+       } else clearTimeout(t);  
+       return false;  
+     }
 
+    $(window).scroll(function() {
+      if($(this).scrollTop() != 0) {
+          $('#toTop').fadeIn();
+      } else {
+        $('#toTop').fadeOut();
+        }
+    });
+  $('#toTop').click(function() {
+    $('body,html').animate({scrollTop:0},800);
+  });
+
+// MENU (SMOOTH SCROLLING)
+    $("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
 
 
 });
