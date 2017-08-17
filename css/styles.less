@@ -9,10 +9,12 @@
 @nums: 'Cuprum', sans-serif;
 @slider: 'Istok Web', sans-serif;
 .main-wrapper{
-	width: 75%;
+	width: 100%;
 	margin: 0 auto;
 }
 .header-wrapper{
+	width: 75%;
+	margin: 0 auto;
 	padding: 10px 0 20px 0;
 	display: flex;
 	justify-content: space-between;
@@ -164,8 +166,12 @@
 } // end of header-wrapper
 // SIDER
 .slider-wrapper{
+
+	width: 75%;
+	margin: 0 auto;
+
+	// width: 100%;
 	position: relative;
-	width: 100%;
 	height: 250px;
 	overflow: hidden;
 		img{
@@ -267,7 +273,10 @@
 
 // NUMS SECTION
 .benefits-wrapper{
-	width: 100%;
+	width: 75%;
+	margin: 0 auto;
+
+	// width: 100%;
 	display: flex;
 	justify-content: space-between;
 	margin-top: 5px;
@@ -344,7 +353,10 @@
 
 //SECTION TITLE
 .section-title{
-	width: 100%;
+	width: 75%;
+	margin: 0 auto;
+
+	// width: 100%;
 	border-bottom: 1px solid #00BFFF;
 	padding: 7px;
 	margin-top: 30px;
@@ -352,32 +364,35 @@
 	color: #00BFFF;
 	font-family: @open;
 	font-weight: 400;
-	// letter-spacing: 1px;
 	word-spacing: 2px;
 	font-size: 27px;
 	font-weight: 200;
-	// font-weight: 600;
 }
 
 
 // COURSES SECTION
 .courses-section{
-	width: 100%;
-	flex-wrap: wrap;
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
+	margin: 0 auto;
+
+	width: 990px;
+	max-width: 90%; 
 	margin-top: 20px;
+
+	// display: flex;
+	// flex-wrap: wrap;
+	// justify-content: space-between;
+	// align-items: flex-start;
+
 }
 .course-wrapper{
-	max-width: 200px;
+	width: 200px;
+	display: inline-block;
 	// width: 20%;
-	display: flex;
-	flex-direction: column;
+	// display: flex;
+	// flex-direction: column;
 	padding: 10px;
 	border: 1px solid white;
-	// flex-grow: 1;
-	margin-left: 10px;
+	margin: 10px 10px;
 	&:hover{
 		border: 1px solid #00BFFF;
 		transition: 0.5s;
@@ -454,13 +469,17 @@
 	background-color: #00BFFF;
 	// background-color: #00b2b3;
 	color: white;
+	width: 100%;
 	font-family: @open;
 	font-weight: 600;
 	padding: 8px 0;
+display: block;
+
 	margin-top: 10px;
 	font-size: 14px;
 	text-align: center;
 	text-decoration: none;
+	// border: 1px solid red;
 	&:hover{
 		cursor: pointer;
 		transition: 0.5s;
@@ -474,15 +493,22 @@
 
 // NEWS SECTION
 .news-wrapper{
-	width: 100%;
+	// width: 80%;
+	// margin: 0 auto;
+// display: block;
+	// width: 100%;
+	// border: 1px solid red;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	flex-wrap: wrap;
 	margin: 10px 0 0 0;
 	.news-section{
+		// border: 1px solid green;
+	display: inline-block;
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
+		margin-right: 20px;
 		width: 220px;
 		box-sizing: border-box;
 		a{
@@ -558,6 +584,9 @@
 
 //ABOUT US (seo)
 .about-us-wrapper{
+	width: 75%;
+	margin: 0 auto;	
+
 	margin-top: 100px;
 	color: #999999;
 	.about-us-title{
@@ -587,13 +616,15 @@
 
 //FOOTER
 .footer{
+	width: 75%;
+	margin: 0 auto;	
 	display: flex;
-	margin: 70px 0 30px 0;
-	padding-top: 30px;
-	border-top: 3px solid #00BFFF;
-	// justify-content: space-between;
 	flex-wrap: wrap;
 
+	margin-top: 70px;
+	margin-bottom: 30px;
+	padding-top: 30px;
+	border-top: 3px solid #00BFFF;
 }
 .footer-info{
 	display: flex;
@@ -648,10 +679,9 @@
 }
 
 .footer-map{
-	width: 72%;
+	width: 70%;
 	// width: 100%;
 	overflow: hidden;
-	// border: 2px solid green;
 
 	iframe{
  		// border: 2px solid green;
@@ -684,11 +714,6 @@
     right: 30px;
     cursor: pointer;
     z-index: 10000;
-    &:hover{
-  //  	    background-color: rgba(54,174,234,0.1);
-  // border-right: 2px solid #36aeea;
-		transition: 1s;
-    }
 }
 
 //...........
