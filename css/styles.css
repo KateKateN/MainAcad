@@ -230,7 +230,7 @@
   width: 200px;
   text-align: center;
   background-color: #00BFFF;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .slider-wrapper .slider-content-wrapper .slider-btn:hover {
   background: #07a0d4;
@@ -242,7 +242,7 @@
 .slider-wrapper .slick-dots {
   position: absolute;
   width: auto;
-  top: 270px;
+  top: 170px;
   left: 170px;
   height: 20px;
   z-index: 100;
