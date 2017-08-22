@@ -814,7 +814,7 @@
     width: 90%;
   }
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 414px) {
   .header-wrapper {
     display: none;
   }
@@ -984,5 +984,13 @@
     font-size: 35px;
     bottom: 25px;
     right: 25px;
+  }
+  .wow {
+    visibility: visible !important;
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
   }
 }
