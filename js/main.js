@@ -8,13 +8,13 @@ $(document).ready(function(){
 // add phone menu (change hamburger to croos)
 	$(".hamburger").click(function(){
 		$(".menu-items-phone").toggle();
-		$(".menu-items-phone").toggleClass("fadeIn animated");
+		// $(".menu-items-phone").toggleClass("fadeIn animated");
 		$(".hamburger").toggle();
 		$(".cross").toggle();
 	});
 	$(".cross").click(function(){
 		$(".menu-items-phone").toggle();
-		$(".menu-items-phone").toggleClass("fadeIn animated");
+		// $(".menu-items-phone").toggleClass("fadeIn animated");
 		$(".hamburger").toggle();
 		$(".cross").toggle();
 	});
