@@ -5,6 +5,25 @@ $(document).ready(function(){
 	// 	$(".tel-second, .address").toggleClass("flipInX animated");
 	// 	$(".add-tel-btn").toggleClass("fa-angle-up fa-angle-down");	
 	// });
+// add phone menu (change hamburger to croos)
+	$(".hamburger").click(function(){
+		$(".menu-items-phone").toggle();
+		$(".menu-items-phone").toggleClass("fadeIn animated");
+		$(".hamburger").toggle();
+		$(".cross").toggle();
+	});
+	$(".cross").click(function(){
+		$(".menu-items-phone").toggle();
+		$(".menu-items-phone").toggleClass("fadeIn animated");
+		$(".hamburger").toggle();
+		$(".cross").toggle();
+	});
+	$(".courses-menu").click(function(){
+		$(".dropdown-menu").toggle();
+		// $(".dropdown-menu").toggleClass("fadeIn animated");
+		// $(".hamburger").toggleClass("fa fa-times");	
+	});
+
 // slider
 $('.main-slider').slick({
 	 	dots: true,
