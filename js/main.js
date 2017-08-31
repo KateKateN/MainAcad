@@ -24,10 +24,29 @@ $(document).ready(function(){
 		// $(".hamburger").toggleClass("fa fa-times");	
 	});
 
+//additional information about courses
+$(".training-plan").click(function(){
+		$(this).toggleClass('active');
+		$(this).find(".not-active-ico").toggle();
+		$(this).find(".active-ico").toggle();		
+		$(".training-plan-content").toggle();
+		$(this).find(".add-info-btn").toggle();
+		$(this).find(".remove-info-btn").toggle();
+		// $(this).removeClass('active');
+});
+
+$(".basic-skills").click(function(){
+		$(this).toggleClass('active');
+		$(this).find(".not-active-ico").toggle();
+		$(this).find(".active-ico").toggle();	
+		$(".basic-skills-content").toggle();	
+		$(this).find(".add-info-btn").toggle();
+		$(this).find(".remove-info-btn").toggle();
+});
 // slider
 $('.main-slider').slick({
 	 	dots: true,
-	 	 dotsClass: "slick-dots",
+	 	dotsClass: "slick-dots",
         // autoplay: true,
         // arrows: true,
         nextArrow: '<img src="img/ico/slim-rightt.png" class="rt-arrow">',
@@ -97,3 +116,6 @@ function up() {
 
 
 });
+
+
+//scrolling courses
