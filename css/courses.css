@@ -1,7 +1,8 @@
 .main-banner {
-  width: 75%;
-  position: relative;
+  width: 990px;
+  max-width: 90%;
   margin: 0 auto;
+  position: relative;
   height: 220px;
   overflow: hidden;
 }
@@ -61,9 +62,10 @@
   box-shadow: -2px 3px 5px 0px rgba(50, 50, 50, 0.4);
 }
 .course-info-wrapper {
-  position: relative;
-  width: 80%;
+  width: 990px;
+  max-width: 90%;
   margin: 0 auto;
+  position: relative;
   display: flex;
   align-items: flex-start;
   color: #1C1C1C;
@@ -77,7 +79,7 @@
   position: sticky;
   top: 0;
   right: 0;
-  margin: -15px 20px 0 0;
+  margin: -5px 20px 0 0;
   padding-top: 20px;
 }
 .course-info-wrapper .course-socials-wrapper a {
@@ -134,7 +136,7 @@
   width: 100%;
   position: relative;
   height: 50px;
-  background: #eceff1;
+  background: #ececec;
   color: #00284b;
   font-size: 15px;
   font-weight: 600;
@@ -214,18 +216,106 @@
   background: #00BFFF;
   color: white;
 }
+.course-info-wrapper .course-content-wrapper .work-it-wrapper {
+  margin-top: 80px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  word-spacing: 3px;
+  color: #1C1C1C;
+}
+.course-info-wrapper .course-content-wrapper .work-it-wrapper .work-it-img-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.course-info-wrapper .course-content-wrapper .work-it-wrapper .work-it-img-wrapper img {
+  margin: 10px 5px 0 0;
+  width: 100px;
+  height: 100%;
+}
+.course-info-wrapper .course-content-wrapper .feedback-wrapper {
+  margin-top: 80px;
+}
+.course-info-wrapper .course-content-wrapper .feedback-wrapper .feedback-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1C1C1C;
+  margin: 5px 0 10px 0;
+}
+.course-info-wrapper .course-content-wrapper .feedback-wrapper .feedback-video-wrapper {
+  background: #ececec;
+  padding: 20px 0;
+}
+.course-info-wrapper .course-content-wrapper .feedback-wrapper .feedback-video-wrapper .feedback-video-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #777777;
+  text-align: center;
+  padding: 0 0 20px 0;
+}
+.course-info-wrapper .course-content-wrapper .feedback-wrapper .feedback-video-wrapper .main-video-wrapper {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.course-info-wrapper .course-content-wrapper .feedback-wrapper .feedback-video-wrapper .video-wrapper {
+  margin: 5px;
+  box-sizing: border-box;
+  padding-top: 10px;
+  border-top: 1px solid #999999;
+}
+.course-info-wrapper .course-content-wrapper .questions-wrapper {
+  margin: 100px 0;
+}
+.course-info-wrapper .course-content-wrapper .questions-wrapper .questions-title {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1C1C1C;
+}
+.course-info-wrapper .course-content-wrapper .questions-wrapper .questions-btn {
+  color: white;
+  background: #EE2C2C;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  width: 250px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 30px;
+  padding: 4px 0;
+  border-radius: 4px;
+  border: 2px solid #EE2C2C;
+}
+.course-info-wrapper .course-content-wrapper .questions-wrapper .questions-btn:hover {
+  background: white;
+  color: #EE2C2C;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.course-info-wrapper .course-content-wrapper .questions-wrapper .questions-btn i {
+  margin-right: 10px;
+}
 .course-info-wrapper .side-bar-wrapper {
   position: sticky;
   top: 0;
   right: 0;
-  margin-left: 10px;
-  flex-basis: 230px;
+  margin-left: 20px;
+  width: 230px;
   box-sizing: border-box;
-  padding: 20px 10px 10px 10px;
+  padding: 20px 0 10px 10px;
 }
 .course-info-wrapper .side-bar-wrapper .img-wrapper {
-  box-sizing: border-box;
   width: 100%;
+  box-sizing: border-box;
 }
 .course-info-wrapper .side-bar-wrapper .img-wrapper img {
   width: 100%;
@@ -333,98 +423,4 @@
   line-height: 16px;
   font-size: 13px;
   margin-top: 5px;
-}
-.work-it-wrapper {
-  margin-top: 80px;
-  width: 52%;
-  margin-left: 14%;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-  word-spacing: 3px;
-  color: #1C1C1C;
-}
-.work-it-wrapper .work-it-img-wrapper {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-top: 30px;
-}
-.work-it-wrapper .work-it-img-wrapper img {
-  margin: 10px 5px 0 0;
-  width: 100px;
-  height: 100%;
-}
-.feedback-wrapper {
-  margin-top: 80px;
-  width: 52%;
-  margin-left: 14%;
-}
-.feedback-wrapper .feedback-title {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  color: #1C1C1C;
-  margin: 5px 0 10px 0;
-}
-.feedback-wrapper .feedback-video-wrapper {
-  background: #ececec;
-  padding: 20px 0;
-}
-.feedback-wrapper .feedback-video-wrapper .feedback-video-title {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 15px;
-  font-weight: 600;
-  color: #777777;
-  text-align: center;
-  padding: 0 0 20px 0;
-}
-.feedback-wrapper .feedback-video-wrapper .main-video-wrapper {
-  width: 95%;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  box-sizing: border-box;
-}
-.feedback-wrapper .feedback-video-wrapper .video-wrapper {
-  margin: 5px;
-  box-sizing: border-box;
-  padding-top: 10px;
-  border-top: 1px solid #999999;
-}
-.questions-wrapper {
-  margin: 100px 0;
-  width: 52%;
-  margin-left: 14%;
-}
-.questions-wrapper .questions-title {
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  color: #1C1C1C;
-}
-.questions-wrapper .questions-btn {
-  color: white;
-  background: #EE2C2C;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-  width: 250px;
-  margin: 0 auto;
-  text-align: center;
-  margin-top: 30px;
-  padding: 4px 0;
-  border-radius: 4px;
-  border: 2px solid #EE2C2C;
-}
-.questions-wrapper .questions-btn:hover {
-  background: white;
-  color: #EE2C2C;
-  transition: 0.4s;
-  cursor: pointer;
-}
-.questions-wrapper .questions-btn i {
-  margin-right: 10px;
 }

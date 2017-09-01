@@ -3,11 +3,16 @@
 @nums: 'Cuprum', sans-serif;
 @slider: 'Istok Web', sans-serif;
 .main-banner{
-	width: 75%;
-	position: relative;
+	// width: 75%;
+	width: 990px;
+	max-width: 90%; 
 	margin: 0 auto;
+	position: relative;
+	// margin: 0 auto;
 	height: 220px;
 	overflow: hidden;
+
+	// border: 1px solid red;
 	.main-banner-img{
 		img{
 			width: 110%;
@@ -72,30 +77,25 @@
 }
 //course wrapper
 .course-info-wrapper{
-	position: relative;
-	width: 80%;
+	width: 990px;
+	max-width: 90%; 
 	margin: 0 auto;
+	position: relative;
 	display: flex;
-	// justify-content: space-between;
 	align-items: flex-start;
 	color: #1C1C1C;
 	line-height: 19px;
 	font-family: @open;
 	box-sizing: border-box;
-	
-	// padding-top: 20px;
-	// border: 1px solid red;
 	.course-socials-wrapper{
 		display: flex;
 		flex-direction: column;
 		position: sticky;
 		top: 0;
 		right: 0;
-		margin: -15px 20px 0 0;
+		margin: -5px 20px 0 0;
 		padding-top: 20px;
-		// border: 1px solid blue;
 		a{
-			// border: 1px solid green;
 			text-decoration: none;
 			outline: none;
 			width: 32px;
@@ -104,12 +104,12 @@
 			img{
 				width: 32px;
 			}
-		&:hover{
-			-webkit-box-shadow: -4px 0px 5px 0px rgba(50, 50, 50, 0.4);
-			-moz-box-shadow:    -4px 0px 5px 0px rgba(50, 50, 50, 0.4);
-			box-shadow:         -4px 0px 5px 0px rgba(50, 50, 50, 0.4);
-			transition: 0.3s;
-		}
+			&:hover{
+				-webkit-box-shadow: -4px 0px 5px 0px rgba(50, 50, 50, 0.4);
+				-moz-box-shadow:    -4px 0px 5px 0px rgba(50, 50, 50, 0.4);
+				box-shadow:         -4px 0px 5px 0px rgba(50, 50, 50, 0.4);
+				transition: 0.3s;
+			}
 		}
 	}
 	.course-content-wrapper{
@@ -117,14 +117,10 @@
 		margin-right: 25px;
 		padding: 20px 25px 0 0;
 		box-sizing: border-box;
-		// border: 1px solid black;
-
 		.course-main-info{
 			font-family: @roboto;
 			font-size: 15px;
 			margin-bottom: 30px;
-
-			// border: 1px solid magenta;
 			.title-info{
 				font-family: @open;
 				font-weight: 700;
@@ -156,8 +152,7 @@
 			position: relative;
 			height: 50px;
 
-			background: #eceff1;
-			// color: #536d79;
+			background: #ececec;
 			color: #00284b;
 			font-size: 15px;
 			font-weight: 600;
@@ -166,7 +161,6 @@
 			padding-left: 20px;
 			margin-top: 5px;
 			box-sizing: border-box;
-			// border: 1px solid red;
 			&:hover{
 				cursor: pointer;
 			}
@@ -176,14 +170,9 @@
 				height: 45px;
 				padding-top: 6px;
 				box-sizing: border-box;
-				// border: 1px solid blue;
-				img{
-					// 32px, height of block45px
-				}
-			}
-			// .not-active-ico{
-				// display: inline-block;
-			// }			
+				// img{
+				// }
+			}			
 			.active-ico{
 				display: none;
 			}
@@ -192,7 +181,6 @@
 				display: inline-block;
 				top: 16px;
 				left: 70px;
-				// border: 1px solid magenta;
 			}
 			.add-info-btn{
 				display: block;
@@ -201,7 +189,6 @@
 					top: 14px;
 					right: 12px;
 					position: absolute;
-					// border: 1px solid green;
 				}
 			}
 			.remove-info-btn{
@@ -211,7 +198,6 @@
 					top: 14px;
 					right: 12px;
 					position: absolute;
-					// border: 1px solid green;
 				}
 			}
 			.content{
@@ -222,55 +208,138 @@
 				color: white;
 			}
 		}
-			.add-content{
-				color: #1C1C1C;
-				display: block;
-				font-size: 15px;
-				// width: 100%;
-				background: #eceff1;
-				margin-top: -17px;
-				padding: 10px;
-				// border: 1px solid red; 
-				.main-item{
-					font-weight: 600;
-					.secondary-item{
-						font-weight: 500;
-						margin: 5px 0;
-						li{ 
-							margin-top: 3px;
-						}
+		.add-content{
+			color: #1C1C1C;
+			display: block;
+			font-size: 15px;
+			background: #eceff1;
+			margin-top: -17px;
+			padding: 10px; 
+			.main-item{
+				font-weight: 600;
+				.secondary-item{
+					font-weight: 500;
+					margin: 5px 0;
+					li{ 
+						margin-top: 3px;
 					}
 				}
 			}
-			.training-plan-content{
-				display: none;
+		}
+		.training-plan-content{
+			display: none;
+		}
+		.basic-skills-content{
+			display: none;
+		}	
+		.active{
+			background: #00BFFF;
+			color: white;
+		}
+		// work in IT
+		.work-it-wrapper{
+			margin-top: 80px;
+			font-family: @open;
+			font-size: 15px;
+			font-weight: 700;
+			word-spacing: 3px;
+			color: #1C1C1C;
+			.work-it-img-wrapper{
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				margin-top: 30px;
+				img{
+					margin: 10px 5px 0 0;
+					width: 100px;
+					height: 100%;
+				}
 			}
-			.basic-skills-content{
-				display: none;
-			}	
-			.active{
-				background: #00BFFF;
+		}
+		//feedback section
+		.feedback-wrapper{
+			margin-top: 80px;
+			.feedback-title{
+				font-family: @open;
+				font-size: 18px;
+				font-weight: 700;
+				color: #1C1C1C;
+				margin: 5px 0 10px 0;
+			}
+			.feedback-video-wrapper{
+				background: #ececec;
+				padding: 20px 0;
+				.feedback-video-title{
+					font-family: @open;
+					font-size: 15px;
+					font-weight: 600;
+					color: #777777;
+					text-align: center;
+					padding: 0 0 20px 0;
+				}
+				.main-video-wrapper{
+					width: 95%;
+					margin: 0 auto;
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: center;
+					box-sizing: border-box;
+				}
+				.video-wrapper{
+					margin: 5px;
+					box-sizing: border-box;
+					padding-top: 10px;
+					border-top: 1px solid #999999;
+				}
+			}
+		}
+		// QUESTIONS
+		.questions-wrapper{
+			margin: 100px 0;
+			.questions-title{
+				text-align: center;
+				font-family: @open;
+				font-size: 18px;
+				font-weight: 700;
+				color: #1C1C1C;
+			}
+			.questions-btn{
 				color: white;
+				background: #EE2C2C;
+				font-family: @open;
+				font-size: 15px;
+				font-weight: 700;
+				width: 250px;
+				margin: 0 auto;
+				text-align: center;
+				margin-top: 30px;
+				padding: 4px 0;
+				border-radius: 4px;
+				border: 2px solid #EE2C2C;
+				&:hover{
+					background: white;
+					color: #EE2C2C;
+					transition: 0.4s; 
+					cursor: pointer;
+				}
+				i{
+					margin-right: 10px;
+				}
 			}
+		}
 	}
 	// side bar
 	.side-bar-wrapper{
 		position: sticky;
 		top: 0;
 		right: 0;
-		margin-left: 10px;
-		flex-basis: 230px;
+		margin-left: 20px;
+		width: 230px;
 		box-sizing: border-box;
-		padding: 20px 10px 10px 10px;
-		// border: 1px solid blue;
-		// /* flex-grow: 1; */
-		// flex: 1;
+		padding: 20px 0 10px 10px;
 		.img-wrapper{
-			// overflow: hidden;
-			 // border: 1px solid blue;
-			box-sizing: border-box;
 			width: 100%;
-			// margin: 0 auto;
+			box-sizing: border-box;
 			img{
 				width: 100%;
 
@@ -358,14 +427,8 @@
 		.teacher-img-wrapper{
 			width: 100%;
 			height: 100px;
-			// border-radius: 50%;
 			overflow: hidden;
 			margin: 10px 0;
-			// border: 2px solid #00BFFF;
-			// padding: 2px;
-			// -webkit-box-shadow: -2px 1px 3px 0px rgba(50, 50, 50, 0.3);
-			// -moz-box-shadow:    -2px 1px 3px 0px rgba(50, 50, 50, 0.2);
-			// box-shadow:         -2px 1px 3px 0px rgba(50, 50, 50, 0.2);
 			img{
 				width: 100%;
 			}
@@ -374,9 +437,9 @@
 			width: 100%;
 			background: #f37137;
 			margin-bottom: 10px;
-			img{
+			// img{
 				// width: 100%;
-			}
+			// }
 		}
 		.teacher-name{
 			font-size: 15px;
@@ -388,117 +451,6 @@
 			line-height: 16px;
 			font-size: 13px;
 			margin-top: 5px;
-		}
-	}
-}
-// work in IT
-.work-it-wrapper{
-	margin-top: 80px;
-	width: 52%;
-	margin-left: 14%;
-	font-family: @open;
-	font-size: 15px;
-	font-weight: 700;
-	word-spacing: 3px;
-	color: #1C1C1C;
-	.work-it-title{
-		// text-align: center;
-	}
-	.work-it-img-wrapper{
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-		margin-top: 30px;
-		img{
-			margin: 10px 5px 0 0;
-			width: 100px;
-			height: 100%;
-		}
-	}
-}
-//feedback section
-.feedback-wrapper{
-	margin-top: 80px;
-	width: 52%;
-	margin-left: 14%;
-
-	// border: 1px solid red;
-	.feedback-title{
-		font-family: @open;
-		font-size: 18px;
-		font-weight: 700;
-		color: #1C1C1C;
-		margin: 5px 0 10px 0;
-	}
-	.feedback-video-wrapper{
-		background: #ececec;
-		padding: 20px 0;
-		.feedback-video-title{
-			font-family: @open;
-			font-size: 15px;
-			font-weight: 600;
-			color: #777777;
-			text-align: center;
-			padding: 0 0 20px 0;
-		}
-		.main-video-wrapper{
-			width: 95%;
-			margin: 0 auto;
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			box-sizing: border-box;
-			// border: 1px solid magenta;
-		}
-		.video-wrapper{
-			margin: 5px;
-			box-sizing: border-box;
-			padding-top: 10px;
-			border-top: 1px solid #999999;
-			// :nth-child(2){
-			// 	margin-right: 0px;
-			// }
-			// display: inline-block;
-			// width: 50%;
-			// border: 1px solid blue;
-		}
-	}
-}
-// QUESTIONS
-.questions-wrapper{
-	margin: 100px 0;
-	width: 52%;
-	margin-left: 14%;
-
-	// border: 1px solid red;
-	.questions-title{
-		text-align: center;
-		font-family: @open;
-		font-size: 18px;
-		font-weight: 700;
-		color: #1C1C1C;
-	}
-	.questions-btn{
-		color: white;
-		background: #EE2C2C;
-		font-family: @open;
-		font-size: 15px;
-		font-weight: 700;
-		width: 250px;
-		margin: 0 auto;
-		text-align: center;
-		margin-top: 30px;
-		padding: 4px 0;
-		border-radius: 4px;
-		border: 2px solid #EE2C2C;
-		&:hover{
-			background: white;
-			color: #EE2C2C;
-			transition: 0.4s; 
-			cursor: pointer;
-		}
-		i{
-			margin-right: 10px;
 		}
 	}
 }

@@ -16,8 +16,11 @@
 	display: none;
 }
 .header-wrapper{
-	width: 75%;
 	margin: 0 auto;
+	width: 990px;
+	max-width: 90%; 
+	// width: 75%;
+	// margin: 0 auto;
 	padding: 10px 0 20px 0;
 	display: flex;
 	justify-content: space-between;
@@ -167,7 +170,8 @@
 } // end of header-wrapper
 // SIDER
 .slider-wrapper{
-	width: 75%;
+	width: 990px;
+	max-width: 90%; 
 	margin: 0 auto;
 	position: relative;
 	height: 250px;
@@ -265,7 +269,8 @@
 
 // NUMS SECTION
 .benefits-wrapper{
-	width: 75%;
+	width: 990px;
+	max-width: 90%; 
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
@@ -338,8 +343,12 @@
 
 //SECTION TITLE
 .section-title{
-	width: 75%;
 	margin: 0 auto;
+	width: 990px;
+	box-sizing: border-box;
+	max-width: 90%; 
+	// width: 75%;
+	// margin: 0 auto;
 	border-bottom: 1px solid #00BFFF;
 	padding: 7px;
 	margin-top: 30px;
@@ -360,6 +369,11 @@
 	width: 990px;
 	max-width: 90%; 
 	margin-top: 20px;
+	// border: 1px solid blue;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 
 }
 .course-wrapper{
@@ -367,7 +381,7 @@
 	display: inline-block;
 	padding: 10px;
 	border: 1px solid white;
-	margin: 10px 10px;
+	// margin: 10px 10px;
 	&:hover{
 		border: 1px solid #00BFFF;
 		transition: 0.5s;
@@ -466,17 +480,19 @@
 
 // NEWS SECTION
 .news-wrapper{
+	width: 990px;
+	max-width: 90%; 
+	margin: 0 auto;
+	margin-top: 10px;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	flex-wrap: wrap;
-	margin: 10px 0 0 0;
 	.news-section{
+		width: 220px;
 		display: inline-block;
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
-		margin-right: 20px;
-		width: 220px;
 		box-sizing: border-box;
 		a{
 			outline: none;
@@ -551,8 +567,9 @@
 
 //ABOUT US (seo)
 .about-us-wrapper{
-	width: 75%;
-	margin: 0 auto;	
+	width: 990px;
+	max-width: 90%; 
+	margin: 0 auto;
 
 	margin-top: 100px;
 	color: #999999;
@@ -581,8 +598,9 @@
 
 //FOOTER
 .footer{
-	width: 75%;
-	margin: 0 auto;	
+	margin: 0 auto;
+	width: 990px;
+	max-width: 90%; 	
 	display: flex;
 	flex-wrap: wrap;
 
@@ -678,7 +696,6 @@
 @media screen and (max-width: 1200px) {
 	// header
 	.header-wrapper{
-		width: 85%;
 		.menu{
 			.logo{
 				margin-right: 25px;

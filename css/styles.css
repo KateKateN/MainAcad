@@ -9,8 +9,9 @@
   display: none;
 }
 .header-wrapper {
-  width: 75%;
   margin: 0 auto;
+  width: 990px;
+  max-width: 90%;
   padding: 10px 0 20px 0;
   display: flex;
   justify-content: space-between;
@@ -160,7 +161,8 @@
   font-size: 14px;
 }
 .slider-wrapper {
-  width: 75%;
+  width: 990px;
+  max-width: 90%;
   margin: 0 auto;
   position: relative;
   height: 250px;
@@ -254,7 +256,8 @@
   z-index: 100;
 }
 .benefits-wrapper {
-  width: 75%;
+  width: 990px;
+  max-width: 90%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -323,8 +326,10 @@
   margin: 12px 15px;
 }
 .section-title {
-  width: 75%;
   margin: 0 auto;
+  width: 990px;
+  box-sizing: border-box;
+  max-width: 90%;
   border-bottom: 1px solid #00BFFF;
   padding: 7px;
   margin-top: 30px;
@@ -340,13 +345,15 @@
   width: 990px;
   max-width: 90%;
   margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .course-wrapper {
   width: 200px;
   display: inline-block;
   padding: 10px;
   border: 1px solid white;
-  margin: 10px 10px;
 }
 .course-wrapper:hover {
   border: 1px solid #00BFFF;
@@ -439,18 +446,20 @@
   background-color: #07a0d4;
 }
 .news-wrapper {
+  width: 990px;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 10px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
-  margin: 10px 0 0 0;
 }
 .news-wrapper .news-section {
+  width: 220px;
   display: inline-block;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-right: 20px;
-  width: 220px;
   box-sizing: border-box;
 }
 .news-wrapper .news-section a {
@@ -517,7 +526,8 @@
   font-size: 12px;
 }
 .about-us-wrapper {
-  width: 75%;
+  width: 990px;
+  max-width: 90%;
   margin: 0 auto;
   margin-top: 100px;
   color: #999999;
@@ -544,8 +554,9 @@
   font-size: 25px;
 }
 .footer {
-  width: 75%;
   margin: 0 auto;
+  width: 990px;
+  max-width: 90%;
   display: flex;
   flex-wrap: wrap;
   margin-top: 70px;
@@ -622,9 +633,6 @@
   z-index: 10000;
 }
 @media screen and (max-width: 1200px) {
-  .header-wrapper {
-    width: 85%;
-  }
   .header-wrapper .menu .logo {
     margin-right: 25px;
   }
