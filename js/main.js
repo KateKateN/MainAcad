@@ -75,11 +75,18 @@ $('.main-slider').slick({
     // ]
       });
 // courses button
-  $(".course-wrapper").hover(function(){
-        $(this).find(".course-btn").css("visibility", "visible").addClass("flipInX animated");
-    }, function(){
-    	$(this).find(".course-btn").css("visibility", "hidden").removeClass("flipInX animated");
-    });
+// $(window).on('load resize',function(){
+	// if (screen.width < 1025) {
+	  $(".course-wrapper").hover(function(){
+	        $(this).find(".course-btn").css("visibility", "visible").addClass("flipInX animated");
+	    }, function(){
+	    	$(this).find(".course-btn").css("visibility", "hidden").removeClass("flipInX animated");
+	    });
+	// }
+	// else{
+		// $(".course-wrapper").find(".course-btn").css("visibility", "visible");
+	// } 
+// });
 
 // change text in slider-content
 	var texts = ['Запрошуємо в MAIN ACADEMY на навчання','Приєднуйся до групи Front End','День вікритих дверей кожний четвер','Набір в групу Front End'];

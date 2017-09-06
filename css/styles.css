@@ -645,9 +645,6 @@
   .slider-wrapper {
     width: 85%;
   }
-  .section-title {
-    width: 85%;
-  }
   .benefits-wrapper {
     width: 85%;
   }
@@ -689,6 +686,11 @@
   }
   .footer-logo img {
     width: 100%;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .course-btn {
+    visibility: visible !important;
   }
 }
 @media screen and (max-width: 930px) {
