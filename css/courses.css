@@ -3,11 +3,11 @@
   max-width: 90%;
   margin: 0 auto;
   position: relative;
-  height: 220px;
+  height: 250px;
   overflow: hidden;
 }
 .main-banner .main-banner-img img {
-  width: 110%;
+  width: 130%;
 }
 .main-banner .blue-over-layer {
   position: absolute;
@@ -20,8 +20,8 @@
   position: absolute;
   height: 130px;
   justify-content: space-between;
-  bottom: 30px;
-  left: 40px;
+  bottom: 50px;
+  left: 50px;
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
@@ -68,14 +68,17 @@
   position: relative;
   display: flex;
   align-items: flex-start;
-  color: #1C1C1C;
-  line-height: 19px;
+  line-height: 20px;
   font-family: 'Open Sans', sans-serif;
   box-sizing: border-box;
 }
 .course-info-wrapper .course-socials-wrapper {
   display: flex;
   flex-direction: column;
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
   position: sticky;
   top: 0;
   right: 0;
@@ -106,19 +109,24 @@
   box-sizing: border-box;
 }
 .course-info-wrapper .course-content-wrapper .course-main-info {
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   margin-bottom: 30px;
+  font-weight: 600;
+  color: #515151;
+  margin-left: 10px;
+  padding-left: 10px;
+  border-left: 2px solid #00BFFF;
 }
 .course-info-wrapper .course-content-wrapper .course-main-info .title-info {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 .course-info-wrapper .course-content-wrapper .course-content {
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;
-  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #515151;
 }
 .course-info-wrapper .course-content-wrapper .course-content ul {
   padding-left: 20px;
@@ -127,8 +135,9 @@
 }
 .course-info-wrapper .course-content-wrapper .course-subtitle {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 17px;
   margin: 15px 0 5px 0;
+  color: #232323;
 }
 .course-info-wrapper .course-content-wrapper .additional-info-wrapper {
   margin-top: 25px;
@@ -139,8 +148,9 @@
   height: 50px;
   background: #ececec;
   color: #00284b;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 600;
+  font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   padding-left: 20px;
   margin-top: 5px;
@@ -151,9 +161,11 @@
 }
 .course-info-wrapper .course-content-wrapper .additional-info .ico-wrapper {
   display: inline-block;
-  height: 45px;
-  padding-top: 6px;
+  margin-top: 13px;
   box-sizing: border-box;
+}
+.course-info-wrapper .course-content-wrapper .additional-info .ico-wrapper img {
+  width: 23px;
 }
 .course-info-wrapper .course-content-wrapper .additional-info .active-ico {
   display: none;
@@ -162,14 +174,14 @@
   position: absolute;
   display: inline-block;
   top: 16px;
-  left: 70px;
+  left: 65px;
 }
 .course-info-wrapper .course-content-wrapper .additional-info .add-info-btn {
   display: block;
 }
 .course-info-wrapper .course-content-wrapper .additional-info .add-info-btn i {
-  font-size: 20px;
-  top: 14px;
+  font-size: 15px;
+  top: 16px;
   right: 12px;
   position: absolute;
 }
@@ -177,8 +189,8 @@
   display: none;
 }
 .course-info-wrapper .course-content-wrapper .additional-info .remove-info-btn i {
-  font-size: 20px;
-  top: 14px;
+  font-size: 15px;
+  top: 16px;
   right: 12px;
   position: absolute;
 }
@@ -190,12 +202,12 @@
   color: white;
 }
 .course-info-wrapper .course-content-wrapper .add-content {
-  color: #1C1C1C;
+  color: #232323;
   display: block;
-  font-size: 15px;
   background: #eceff1;
-  margin-top: -17px;
-  padding: 10px;
+  margin-top: -15px;
+  padding: 10px 20px;
+  font-size: 15px;
 }
 .course-info-wrapper .course-content-wrapper .add-content .main-item {
   font-weight: 600;
@@ -203,6 +215,7 @@
 .course-info-wrapper .course-content-wrapper .add-content .main-item .secondary-item {
   font-weight: 500;
   margin: 5px 0;
+  font-size: 14px;
 }
 .course-info-wrapper .course-content-wrapper .add-content .main-item .secondary-item li {
   margin-top: 3px;
@@ -306,6 +319,10 @@
   color: #EE2C2C;
   transition: 0.4s;
   cursor: pointer;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1);
 }
 .course-info-wrapper .course-content-wrapper .questions-wrapper .questions-btn i {
   margin-right: 10px;
@@ -314,37 +331,44 @@
   display: none;
 }
 .course-info-wrapper .side-bar-wrapper {
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
   position: sticky;
   top: 0;
   right: 0;
   margin-left: 20px;
   width: 230px;
   box-sizing: border-box;
-  padding: 20px 0 10px 10px;
+  padding: 10px 0 10px 0;
+  color: #515151;
 }
 .course-info-wrapper .side-bar-wrapper .img-wrapper {
-  width: 100%;
+  width: 150px;
   box-sizing: border-box;
+  margin: 0 auto;
 }
 .course-info-wrapper .side-bar-wrapper .img-wrapper img {
   width: 100%;
 }
 .course-info-wrapper .side-bar-wrapper .side-course-title {
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 700;
   margin-top: 5px;
-  padding-bottom: 10px;
+  padding-bottom: 3px;
   border-bottom: 1px solid #999999;
 }
 .course-info-wrapper .side-bar-wrapper .price-title {
   font-size: 14px;
   font-weight: 600;
-  margin-top: 10px;
+  margin-top: 6px;
 }
 .course-info-wrapper .side-bar-wrapper .price {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
   color: #EE2C2C;
+  margin-top: -3px;
 }
 .course-info-wrapper .side-bar-wrapper .price .side-old-price {
   font-size: 14px;
@@ -362,8 +386,8 @@
 .course-info-wrapper .side-bar-wrapper .register-course-btn {
   margin-top: 15px;
   padding: 5px 0;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 13px;
+  font-weight: 600;
   text-align: center;
   border-radius: 4px;
   border: 2px solid #00BFFF;
@@ -383,8 +407,8 @@
 .course-info-wrapper .side-bar-wrapper .order-consultation-btn {
   margin-top: 5px;
   padding: 5px 0;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 13px;
+  font-weight: 600;
   text-align: center;
   border-radius: 4px;
   border: 2px solid #EE2C2C;
@@ -405,14 +429,14 @@
   font-size: 15px;
   font-weight: 600;
   margin-top: 15px;
-  padding-top: 10px;
-  border-top: 1px solid #999999;
+  padding: 3px 0;
+  border-bottom: 1px solid #999999;
 }
 .course-info-wrapper .side-bar-wrapper .teacher-img-wrapper {
   width: 100%;
-  height: 100px;
+  height: 80px;
   overflow: hidden;
-  margin: 10px 0;
+  margin: 5px 0;
 }
 .course-info-wrapper .side-bar-wrapper .teacher-img-wrapper img {
   width: 100%;
@@ -420,7 +444,10 @@
 .course-info-wrapper .side-bar-wrapper .teacher-job {
   width: 100%;
   background: #f37137;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+}
+.course-info-wrapper .side-bar-wrapper .teacher-job img {
+  width: 50%;
 }
 .course-info-wrapper .side-bar-wrapper .teacher-name {
   font-size: 15px;
@@ -431,7 +458,6 @@
   font-weight: 600;
   line-height: 16px;
   font-size: 13px;
-  margin-top: 5px;
 }
 @media screen and (max-width: 800px) {
   .course-info-wrapper .course-content-wrapper {

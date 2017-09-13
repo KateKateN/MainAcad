@@ -28,7 +28,10 @@ $(document).ready(function(){
 $(".training-plan").click(function(){
 		$(this).toggleClass('active');
 		$(this).find(".not-active-ico").toggle();
-		$(this).find(".active-ico").toggle();		
+
+		$(this).find("#activeTrainingIcon").toggleClass("ico-wrapper")
+		.toggleClass("active-ico");
+
 		$(".training-plan-content").toggle();
 		$(this).find(".add-info-btn").toggle();
 		$(this).find(".remove-info-btn").toggle();
@@ -38,7 +41,10 @@ $(".training-plan").click(function(){
 $(".basic-skills").click(function(){
 		$(this).toggleClass('active');
 		$(this).find(".not-active-ico").toggle();
-		$(this).find(".active-ico").toggle();	
+
+		$(this).find("#activeSkillIcon").toggleClass("ico-wrapper")
+		.toggleClass("active-ico");
+		
 		$(".basic-skills-content").toggle();	
 		$(this).find(".add-info-btn").toggle();
 		$(this).find(".remove-info-btn").toggle();
