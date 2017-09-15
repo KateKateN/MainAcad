@@ -561,31 +561,29 @@
   flex-wrap: wrap;
   margin-top: 70px;
   margin-bottom: 30px;
-  padding-top: 30px;
+  padding-top: 22px;
   border-top: 3px solid #00BFFF;
 }
 .footer-info {
   display: flex;
   flex-direction: column;
   color: #353535;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 25px;
   margin-right: 3%;
   width: 25%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
 }
 .footer-logo img {
-  width: 200px;
+  width: 140px;
 }
 .footer-contact-title {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 15px;
-  font-weight: 600;
   text-transform: uppercase;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-  margin: 20px 0 10px 0;
-  padding-bottom: 3px;
+  margin: 5px 0 10px 0;
+  padding-bottom: 1px;
   border-bottom: 1px solid #00BFFF;
 }
 .footer-tel i {
@@ -600,17 +598,21 @@
 }
 .footer-socials {
   display: flex;
-  margin-top: 25px;
+  margin-top: 17px;
   justify-content: space-around;
 }
 .footer-socials div img {
-  width: 40px;
+  width: 36px;
 }
 .footer-map {
   width: 72%;
   overflow: hidden;
 }
-.footer-map iframe {
+.footer-map .full-map {
+  width: 100%;
+}
+.footer-map .phone-map {
+  display: none;
   width: 100%;
 }
 #toTop {
@@ -642,9 +644,6 @@
   .header-wrapper .menu .contact {
     min-width: 225px;
   }
-  .slider-wrapper {
-    width: 85%;
-  }
   .benefits-wrapper {
     width: 85%;
   }
@@ -662,8 +661,6 @@
     background-size: 140%;
   }
   .news-wrapper {
-    width: 85%;
-    margin: 0 auto;
     justify-content: space-between;
     margin-top: 10px;
   }
@@ -677,15 +674,6 @@
   .news-wrapper .news-section .news-img {
     width: auto;
     height: 180px;
-  }
-  .about-us-wrapper {
-    width: 85%;
-  }
-  .footer {
-    width: 85%;
-  }
-  .footer-logo img {
-    width: 100%;
   }
 }
 @media screen and (max-width: 1025px) {
@@ -812,7 +800,6 @@
   }
   .footer-map {
     width: 100%;
-    overflow: hidden;
     margin-top: 20px;
   }
   .footer-map iframe {
@@ -980,13 +967,21 @@
     font-size: 20px;
   }
   .footer {
-    width: 90%;
     margin-top: 30px;
     padding-top: 15px;
+  }
+  .footer-contact-title {
+    border-bottom: none;
   }
   .footer-map {
     width: 100%;
     margin-top: 15px;
+  }
+  .footer-map .full-map {
+    display: none;
+  }
+  .footer-map .phone-map {
+    display: block;
   }
   #toTop {
     width: 40px;

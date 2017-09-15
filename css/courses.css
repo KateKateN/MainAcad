@@ -125,9 +125,10 @@
 }
 .course-info-wrapper .course-content-wrapper .course-content {
   font-family: 'Open Sans', sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
   color: #515151;
+  line-height: 22px;
 }
 .course-info-wrapper .course-content-wrapper .course-content ul {
   padding-left: 20px;
