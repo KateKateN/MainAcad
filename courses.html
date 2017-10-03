@@ -20,6 +20,7 @@
 	<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/ui-lightness/jquery-ui.css">
 	<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
 	<script   src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"   integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="   crossorigin="anonymous"></script>
+	<script src="js/jquery.masked-input.min.js"></script>
 </head>
 <body>
 	<div class="main-wrapper">
@@ -94,7 +95,7 @@
 			<div class="main-banner-content">
 				<div class="btn-difficulty-level">середній рівень</div>
 				<div class="main-course-title">курс основи програмування</div>
-				<a href="#" class="btn-become-student"><div>стати студентом</div></a>
+				<button class="become-student-btn">стати студентом</button>
 			</div>
 		</div>
 		<div class="section-title">Курс "Основи програмування"</div>
@@ -106,11 +107,19 @@
 					<a href=""><img src="img/ico/course-google-plus.png"></a>
 			</div>
 			<div class="course-content-wrapper">
-				<div class="course-main-info">
-					<div><span class="title-info">Тривалість:</span>24 год або 1 місяць</div>
-					<div><span class="title-info">Інтенсивність:</span>Заняння провояться 2-3 рази на тиждень, у вечірній час з 18:30 до 21:30</div>
-					<div><span class="title-info">Кількість слухачів:</span>до 15</div>
-					<div><span class="title-info">Місце проведення:</span>м. Львів, пр. Чорновола 67</div>
+				<div class="course-main-info-wrapper">
+					<div class="course-main-info">
+						<div class="info-ico"><i class="fa fa-clock-o" aria-hidden="true"></i></div><div class="info-content"><span class="info-title">Тривалість:</span>24 год. / 1 місяць</div>
+					</div>
+					<div class="course-main-info">
+						<div class="info-ico"><i class="fa fa-calendar" aria-hidden="true"></i></div><div class="info-content"><span class="info-title">Інтенсивність:</span>2-3 рази на тиждень, у вечірній час з 18:30 до 21:30</div>
+					</div>
+					<div class="course-main-info">
+						<div class="info-ico"><i class="fa fa-users" aria-hidden="true"></i></div><div class="info-content"><span class="info-title">Кількість слухачів:</span>до 15</div>
+					</div>
+					<div class="course-main-info">
+						<div class="info-ico"><i class="fa fa-map-marker" aria-hidden="true"></i></div><div class="info-content"><span class="info-title">Місце проведення:</span>м. Львів, пр. Чорновола, 67  (8 поверх)</div>
+					</div>
 				</div>
 				<div class="course-content">Наш курс «Розробка і просування web-проектів» допоможе Вам стати фахівцем у цій галузі всього за 1 рік! По закінченню Ви зможете стати універсальним фахівцем, який зможе з “нуля” створити повноцінний сайт, отримати на нього якісний трафік (клієнти, замовлення) і тримати його у ТОПі пошукових систем.
 				Ви вивчите такі мови web-програмування як PHP і JavaScript, навчитеся працювати з базами даних MySql і web-серверами Apache. Звичайно ж, сайт повинен не тільки стабільно і швидко працювати, а й мати привабливий інтерфейс, тому ми обов’язково зупинимося і на web-дизайні.
@@ -279,8 +288,8 @@
 							<div class="price">600 грн./міс.<span class="side-per">x3</span><span class="side-old-price">1000 грн</span></div>
 					
 							<div class="register-section">
-								<div class="register-course-btn">Записатись на курс</div>
-								<div class="order-consultation-btn">Замовити консультацію</div>
+								<button class="register-course-btn">Записатись на курс</button>
+								<button class="order-consultation-btn">Замовити консультацію</button>
 							</div>
 						</div>
 						<div class="teacher-section">
@@ -423,13 +432,13 @@
 
 
 		<footer>
-		<div class="footer">
+			<div class="footer">
 				<div class="footer-info" id="contact">
 					<div class="footer-logo"><a href="index.html"><img src="img/logo_test.jpg"></a></div>
 					<div class="footer-contact-title">Контактна інформація</div>
 					<div class="footer-tel"><i class="fa fa-phone" aria-hidden="true"></i>(073) 66-48-86</div>
 					<div class="footer-tel"><i class="fa fa-phone" aria-hidden="true"></i>(073) 66-48-86</div>
-					<div class="footer-address"><i class="fa fa-map-marker" aria-hidden="true"></i>вул. Чорновола, 67 (8 поверх)</div>
+					<div class="footer-address"><i class="fa fa-map-marker" aria-hidden="true"></i>пр. Чорновола, 67 (8 поверх)</div>
 
 					<div class="footer-socials">
 						<div class="hvr-float-shadow"><a href=""><img src="img/ico/youtube.png"></a></div>
@@ -443,11 +452,77 @@
 					<!-- map for phone size -->
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2572.0918385753366!2d24.016828215106315!3d49.85951947939815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473adda8b0fd98b9%3A0x519bfd4f59b19cbf!2sMain+Academy+(IT)!5e0!3m2!1suk!2sua!4v1505502537958" width="400" height="230" frameborder="0" style="border:0" allowfullscreen class="phone-map"></iframe>
 				</div>
-		</div>	
-	</footer>
-
-
+			</div>	
+		</footer>
+	</div>	
+	<div class="register-modal">
+	  <!-- Modal content -->
+		<div class="register-modal-wrapper">
+	  		<div class="register-modal-title">
+	  			<div class="title">реєстрація</div>
+	   			<div class="close-modal-wrapper"><i class="fa fa-times close-modal" aria-hidden="true"></i></div>
+	  		</div>
+	  		<div class="register-modal-content">
+	  			<form class="register-form">
+		  			<div class="select-wrapper">
+		  				<select>
+							<option value="volvo">Основи програмування</option>
+							<option value="saab">Front-end (верстка)</option>
+							<option value="opel">Front-end (JavaScript)</option>
+							<option value="audi">C#</option>
+							<option value="audi">QA</option>
+						</select>
+						<i class="fa fa-caret-down down-arrow" aria-hidden="true"></i>
+					</div>
+					<div class="input-group">
+						<input id="name" type="text" name="phone" placeholder="Прізвище та ім'я">
+					</div>
+					<div class="input-group">
+						<input id="phone" type="text" name="phone" data-masked-input="(999)-99-99-999" placeholder="Моб. телефон" maxlength="10">
+					</div>
+					<div class="comments">
+						<input id="comments" type="text" name="comments" placeholder="Коментарі">
+					</div>
+					<button class="send-app flipInX animated">відправити заявку<i class="fa fa-long-arrow-right send-app-arrow" aria-hidden="true"></i></button>
+	  			</form>
+	  		</div>
+		</div>
 	</div>
+
+	<div class="consultation-modal">
+	  <!-- Modal content -->
+		<div class="register-modal-wrapper animated">
+	  		<div class="register-modal-title">
+	  			<div class="title">консультація</div>
+	   			<div class="close-modal-wrapper"><i class="fa fa-times close-modal" aria-hidden="true"></i></div>
+	  		</div>
+	  		<div class="register-modal-content">
+	  			<form class="register-form">
+		  			<div class="select-wrapper">
+		  				<select>
+							<option value="volvo">Основи програмування</option>
+							<option value="saab">Front-end (верстка)</option>
+							<option value="opel">Front-end (JavaScript)</option>
+							<option value="audi">C#</option>
+							<option value="audi">QA</option>
+						</select>
+						<i class="fa fa-caret-down down-arrow" aria-hidden="true"></i>
+					</div>
+					<div class="input-group">
+						<input id="name" type="text" name="phone" placeholder="Прізвище та ім'я">
+					</div>
+					<div class="input-group">
+						<input id="phone" type="text" name="phone" data-masked-input="(999)-99-99-999" placeholder="Моб. телефон" maxlength="10">
+					</div>
+					<div class="comments">
+						<input id="comments" type="text" name="comments" placeholder="Коментарі">
+					</div>
+					<button class="send-app flipInX animated">відправити заявку<i class="fa fa-long-arrow-right send-app-arrow" aria-hidden="true"></i></button>
+	  			</form>
+	  		</div>
+		</div>
+	</div>
+
 	<!-- to top btn -->
 	<div id = "toTop" class="hvr-bob"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
 

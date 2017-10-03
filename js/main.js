@@ -63,9 +63,6 @@ $('.main-slider').slick({
         // cssEase: 'linear',
         slidesToShow: 1,
         appendArrows: $(".header-content")[0]
-
-
-
     //       responsive: [
     // {
     //   breakpoint: 768,
@@ -80,19 +77,13 @@ $('.main-slider').slick({
     // }
     // ]
       });
-// courses button
-// $(window).on('load resize',function(){
-	// if (screen.width < 1025) {
+
 	  $(".course-wrapper").hover(function(){
 	        $(this).find(".course-btn").css("visibility", "visible").addClass("flipInX animated");
 	    }, function(){
 	    	$(this).find(".course-btn").css("visibility", "hidden").removeClass("flipInX animated");
 	    });
-	// }
-	// else{
-		// $(".course-wrapper").find(".course-btn").css("visibility", "visible");
-	// } 
-// });
+
 
 // change text in slider-content
 	var texts = ['Запрошуємо в MAIN ACADEMY на навчання','Приєднуйся до групи Front End','День вікритих дверей кожний четвер','Набір в групу Front End'];
@@ -127,8 +118,42 @@ function up() {
         $('body,html').animate({scrollTop: top}, 1500);
     });
 
-
+//forms
+$(".become-student-btn,.register-course-btn").on("click", function(){
+	$(".register-modal").css("display","block");
+});
+$(".order-consultation-btn").on("click", function(){
+	$(".consultation-modal").css("display","block");
+});
+//close modal
+$(".close-modal-wrapper").on("click", function(){
+	$(".register-modal, .consultation-modal").css("display","none");
+});
+// on click outside the modal, close it
+$(document).mouseup(function(e){
+	var modal = $(".register-modal-wrapper");
+	if(!modal.is(e.target)&&modal.has(e.target).length==0){
+		$(".register-modal, .consultation-modal").css("display","none");
+	}
 });
 
 
+// $("#phone").mask("(999) 999-9999");
+
+//hover on send-app button arrow
+$(".send-app").hover(function(){
+    $(".send-app-arrow").css({
+    	'transform' : 'translate(5px)',
+    	'transition' : '0.4s'
+    });
+    }, function(){
+    $(".send-app-arrow").css({
+    	'transform' : 'translate(-2px)',
+    	'transition' : '0.4s'
+    });
+});
+
+
+});
 //scrolling courses
+

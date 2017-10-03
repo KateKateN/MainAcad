@@ -42,21 +42,24 @@
   word-spacing: 4px;
   font-weight: 700;
 }
-.main-banner .main-banner-content .btn-become-student {
+.main-banner .main-banner-content .become-student-btn {
   margin-top: 25px;
   width: 160px;
+  height: 35px;
   background: #EE2C2C;
   font-family: 'Open Sans', sans-serif;
   font-size: 13px;
   font-weight: 600;
-  text-align: center;
-  padding: 10px 0;
+  text-transform: uppercase;
   color: white;
   text-decoration: none;
+  border: none;
+  outline: none;
 }
-.main-banner .main-banner-content .btn-become-student:hover {
+.main-banner .main-banner-content .become-student-btn:hover {
   background: #FF4040;
   transition: 0.5s;
+  cursor: pointer;
   -webkit-box-shadow: -2px 3px 5px 0px rgba(50, 50, 50, 0.4);
   -moz-box-shadow: -2px 3px 5px 0px rgba(50, 50, 50, 0.4);
   box-shadow: -2px 3px 5px 0px rgba(50, 50, 50, 0.4);
@@ -82,7 +85,7 @@
   position: sticky;
   top: 0;
   right: 0;
-  margin: -5px 20px 0 0;
+  margin: 0 20px 0 0;
   padding-top: 20px;
 }
 .course-info-wrapper .course-socials-wrapper a {
@@ -108,24 +111,49 @@
   text-align: justify;
   box-sizing: border-box;
 }
-.course-info-wrapper .course-content-wrapper .course-main-info {
-  font-size: 14px;
-  margin-bottom: 30px;
-  color: #6b6b6b;
-  margin-left: 10px;
-  padding-left: 10px;
-  border-left: 2px solid #00BFFF;
+.course-info-wrapper .course-content-wrapper .course-main-info-wrapper {
+  border-bottom: 1px solid #999999;
+  padding-bottom: 30px;
 }
-.course-info-wrapper .course-content-wrapper .course-main-info .title-info {
+.course-info-wrapper .course-content-wrapper .course-main-info {
+  display: flex;
+}
+.course-info-wrapper .course-content-wrapper .course-main-info .info-ico i {
+  font-size: 15px;
+  color: #777777;
+}
+.course-info-wrapper .course-content-wrapper .course-main-info .info-ico .fa-clock-o {
+  margin-left: 1px;
+  margin-right: 17px;
+}
+.course-info-wrapper .course-content-wrapper .course-main-info .info-ico .fa-calendar {
+  margin-left: 1px;
+  margin-right: 17px;
+}
+.course-info-wrapper .course-content-wrapper .course-main-info .info-ico .fa-users {
+  margin-right: 16px;
+}
+.course-info-wrapper .course-content-wrapper .course-main-info .info-ico .fa-map-marker {
+  margin-left: 4px;
+  margin-right: 20px;
+}
+.course-info-wrapper .course-content-wrapper .course-main-info .info-content {
+  font-size: 14px;
+  color: #444444;
+  font-weight: 600;
+  line-height: 22px;
+}
+.course-info-wrapper .course-content-wrapper .course-main-info .info-content .info-title {
+  font-weight: 400;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
   margin-right: 15px;
   color: #565555;
 }
 .course-info-wrapper .course-content-wrapper .course-content {
+  margin-top: 20px;
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
-  color: #6b6b6b;
+  color: #565555;
   line-height: 22px;
 }
 .course-info-wrapper .course-content-wrapper .course-content ul {
@@ -137,7 +165,7 @@
   font-weight: 700;
   font-size: 17px;
   margin: 15px 0 5px 0;
-  color: #565555;
+  color: #444444;
 }
 .course-info-wrapper .course-content-wrapper .additional-info-wrapper {
   margin-top: 25px;
@@ -202,7 +230,7 @@
   color: white;
 }
 .course-info-wrapper .course-content-wrapper .add-content {
-  color: #232323;
+  color: #444444;
   display: block;
   background: #eceff1;
   margin-top: -15px;
@@ -384,6 +412,7 @@
   margin-left: 10px;
 }
 .course-info-wrapper .side-bar-wrapper .register-course-btn {
+  width: 100%;
   margin-top: 15px;
   padding: 5px 0;
   font-size: 13px;
@@ -405,6 +434,7 @@
   box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1);
 }
 .course-info-wrapper .side-bar-wrapper .order-consultation-btn {
+  width: 100%;
   margin-top: 5px;
   padding: 5px 0;
   font-size: 13px;
@@ -457,6 +487,153 @@
   color: #555555;
   font-weight: 600;
   line-height: 16px;
+  font-size: 13px;
+}
+/* The Modal (background) */
+.register-modal,
+.consultation-modal {
+  display: none;
+  position: fixed;
+  z-index: 101;
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Black w/ opacity */
+}
+/* Modal Content/Box */
+.register-modal-wrapper {
+  width: 450px;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 100px;
+  font-family: 'Open Sans', sans-serif;
+  color: #444444;
+  background: white;
+  border: 5px solid #00adcc;
+  box-sizing: border-box;
+}
+.register-modal-wrapper .register-modal-title {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px 15px;
+  background: #00adcc;
+  color: white;
+}
+.register-modal-wrapper .register-modal-title .title {
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.3);
+}
+.register-modal-wrapper .register-modal-title .close-modal-wrapper {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -18px;
+  right: -18px;
+  background: white;
+  border: 4px solid #00adcc;
+  border-radius: 50%;
+  text-align: center;
+}
+.register-modal-wrapper .register-modal-title .close-modal-wrapper:hover {
+  cursor: pointer;
+}
+.register-modal-wrapper .register-modal-title .close-modal-wrapper:hover > .close-modal {
+  margin-top: 4px;
+  margin-right: 1px;
+  opacity: 1;
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.register-modal-wrapper .register-modal-title .close-modal-wrapper .close-modal {
+  margin-top: 3px;
+  margin-left: 1px;
+  color: #444444;
+  font-size: 17px;
+  -webkit-transition: -webkit-transform 0.25s, opacity 0.25s;
+  -moz-transition: -moz-transform 0.25s, opacity 0.25s;
+  transition: transform .25s, opacity .25s;
+  opacity: .80;
+}
+.register-modal-wrapper .register-modal-content .register-form {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  width: 350px;
+  max-width: 90%;
+  font-size: 13px;
+  color: #444444;
+}
+.register-modal-wrapper .register-modal-content .register-form .select-wrapper {
+  position: relative;
+}
+.register-modal-wrapper .register-modal-content .register-form .select-wrapper select {
+  width: 100%;
+  margin: 5px 0 5px 0;
+  padding: 3px 0;
+  outline: none;
+  font-weight: 600;
+  border: none;
+  border-bottom: 1px solid #9a9a9a;
+}
+.register-modal-wrapper .register-modal-content .register-form .select-wrapper select:hover {
+  cursor: pointer;
+}
+.register-modal-wrapper .register-modal-content .register-form .select-wrapper .down-arrow {
+  position: absolute;
+  top: 7px;
+  right: 3px;
+  pointer-events: none;
+  color: #c9b027;
+  font-size: 21px;
+}
+.register-modal-wrapper .register-modal-content .register-form input {
+  width: 100%;
+  margin: 5px 0;
+  padding: 6px 0;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #9a9a9a;
+}
+.register-modal-wrapper .register-modal-content .register-form .comments {
+  margin-top: 23px;
+}
+.register-modal-wrapper .register-modal-content .register-form .send-app {
+  width: 190px;
+  margin-top: 20px;
+  padding: 12px 0;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  outline: none;
+  border: 3px solid #00adcc;
+  background: white;
+}
+.register-modal-wrapper .register-modal-content .register-form .send-app:hover {
+  cursor: pointer;
+  color: white;
+  background: #00adcc;
+  transition: 0.3s;
+}
+.register-modal-wrapper .register-modal-content .register-form .send-app:hover > .send-app-arrow {
+  color: white;
+}
+.register-modal-wrapper .register-modal-content .register-form .send-app .send-app-arrow {
+  margin-left: 17px;
+  color: #c9b027;
   font-size: 13px;
 }
 @media screen and (max-width: 800px) {
@@ -557,6 +734,7 @@
     margin-top: 5px;
   }
   .course-info-wrapper .course-content-wrapper .bottom-course-wrapper .register-section .register-course-btn {
+    width: 100%;
     margin-top: 15px;
     padding: 5px 0;
     font-size: 14px;
@@ -566,6 +744,7 @@
     border: 2px solid #00BFFF;
     background: #00BFFF;
     color: white;
+    user-select: none;
   }
   .course-info-wrapper .course-content-wrapper .bottom-course-wrapper .register-section .register-course-btn:hover {
     background: white;
@@ -578,6 +757,7 @@
     box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1);
   }
   .course-info-wrapper .course-content-wrapper .bottom-course-wrapper .register-section .order-consultation-btn {
+    width: 100%;
     margin-top: 5px;
     padding: 5px 0;
     font-size: 14px;
@@ -645,5 +825,8 @@
   .main-banner .main-banner-content {
     bottom: 40px;
     left: 20px;
+  }
+  .become-student-btn {
+    padding: 10px 0 25px 0;
   }
 }

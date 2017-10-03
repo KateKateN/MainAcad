@@ -26,6 +26,7 @@
 	.main-banner-content{
 		position: absolute;
 		height: 130px;
+		box-sizing: border-box;
 		justify-content: space-between;
 		// top: 0px;
 		bottom: 50px;
@@ -50,20 +51,25 @@
 			word-spacing: 4px;
 			font-weight: 700;
 		}
-		.btn-become-student{
+		.become-student-btn{
 			margin-top: 25px;
 			width: 160px;
+			height: 35px;
 			background: #EE2C2C; 
 			font-family: @open;
 			font-size: 13px;
 			font-weight: 600;
-			text-align: center;
-			padding: 10px 0;
+			text-transform: uppercase;
+			// text-align: center;
+			// padding: 10px 0;
 			color: white;
 			text-decoration: none;
+			border: none;
+			outline: none;
 			&:hover{
 				background: 	#FF4040;
 				transition: 0.5s;
+				cursor: pointer;
 
 				-webkit-box-shadow: -2px 3px 5px 0px rgba(50, 50, 50, 0.4);
 				-moz-box-shadow:    -2px 3px 5px 0px rgba(50, 50, 50, 0.4);
@@ -93,7 +99,7 @@
 		position: sticky;		
 		top: 0;
 		right: 0;
-		margin: -5px 20px 0 0;
+		margin: 0 20px 0 0;
 		padding-top: 20px;
 		a{
 			text-decoration: none;
@@ -118,27 +124,53 @@
 		padding: 20px 25px 0 0;
 		text-align: justify;
 		box-sizing: border-box;
+		.course-main-info-wrapper{
+			border-bottom: 1px solid #999999;
+			padding-bottom: 30px;
+		}		
 		.course-main-info{
-			font-size: 14px;
-			margin-bottom: 30px;
-			// font-weight: 600;
-			color: #6b6b6b;
-			margin-left: 10px;
-			padding-left: 10px;
-			border-left: 2px solid #00BFFF;			
-			.title-info{
-				font-family: @open;
-				font-weight: 700;
-				margin-right: 15px;
-				// color: #232323;
-				color: #565555;
+			display: flex;
+			.info-ico{
+				i{
+				font-size: 15px;
+				color: #777777;
+				}
+				.fa-clock-o{
+					margin-left: 1px;
+					margin-right: 17px;
+				}
+				.fa-calendar{
+					margin-left: 1px;
+					margin-right: 17px;
+				}
+				.fa-users{
+					margin-right: 16px;
+				}
+				.fa-map-marker{
+					margin-left: 4px;
+					margin-right: 20px;
+				}
+			}
+			.info-content{
+				font-size: 14px;
+				color: #444444;
+				font-weight: 600;	
+				line-height: 22px;
+				.info-title{
+					font-weight: 400;
+					font-family: @open;
+					margin-right: 15px;
+					color: #565555;
+				}
 			}
 		}
 		.course-content{
+			margin-top: 20px;
 			font-family: @open;
 			font-size: 14px;
 			// font-weight: 600;
-			color: #6b6b6b;
+			color: #565555;
+			// color: red;
 			line-height: 22px;
 			ul{
 				padding-left: 20px;
@@ -153,7 +185,7 @@
 			font-size: 17px;
 			margin: 15px 0 5px 0;
 			// color: #232323;
-			color: #565555;
+			color: #444444;
 		}
 		.additional-info-wrapper{
 			margin-top: 25px;
@@ -222,7 +254,7 @@
 			}
 		}
 		.add-content{
-			color: #232323;
+			color: #444444;
 			display: block;
 			font-size: 15px;
 			background: #eceff1;
@@ -411,6 +443,7 @@
 			}
 		}
 		.register-course-btn{
+			width: 100%;
 			margin-top: 15px;
 			padding: 5px 0;
 			font-size: 13px;
@@ -432,6 +465,7 @@
 			}
 		}
 		.order-consultation-btn{
+			width: 100%;
 			margin-top: 5px;
 			padding: 5px 0;
 			font-size: 13px;
@@ -489,6 +523,163 @@
 		}
 	}
 }
+/* The Modal (background) */
+.register-modal, .consultation-modal{
+	display: none;
+	position: fixed;
+	z-index: 101;
+	left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+}
+/* Modal Content/Box */
+.register-modal-wrapper{
+	width: 450px;
+	max-width: 90%; 
+	margin: 0 auto;
+	margin-top: 100px;
+
+	font-family: @open;
+	color: #444444;
+	background: white;
+	border: 5px solid #00adcc;
+	box-sizing: border-box;
+	.register-modal-title{
+		display: flex;
+		justify-content: space-between;
+		position: relative; 
+		padding: 10px 15px;
+		background: #00adcc;
+		color: white;
+		.title{
+			margin: 0 auto;
+
+			font-family: @roboto;
+			font-size: 22px;
+			font-weight: 600;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.3);
+		}
+		.close-modal-wrapper{
+			position: absolute;
+			width: 25px;
+			height: 25px;
+			top: -18px;
+			right: -18px;
+
+			// border: 4px solid #00BFFF;
+			background: white;
+			border: 4px solid #00adcc;
+			border-radius: 50%;
+			text-align: center;
+			&:hover{
+				cursor: pointer;
+			}
+			&:hover > .close-modal{
+				margin-top: 4px;
+				margin-right: 1px;
+				opacity: 1;
+				-webkit-transform: rotate(270deg);
+				-moz-transform: rotate(270deg);
+				transform: rotate(270deg);
+			}
+			.close-modal{
+				margin-top: 3px;
+				margin-left: 1px;
+
+				color: #444444;
+				font-size: 17px;
+				-webkit-transition:-webkit-transform .25s, opacity .25s;
+	         	-moz-transition:-moz-transform .25s, opacity .25s;
+	            transition: transform .25s, opacity .25s;
+				opacity:.80;
+			}
+		}
+	}
+	.register-modal-content{
+		.register-form{
+			margin: 0 auto;
+			margin-top: 20px;
+			margin-bottom: 25px;			
+			width: 350px;
+			max-width: 90%;
+
+			font-size: 13px;
+			color: #444444;
+			.select-wrapper{
+				position: relative;
+				select{
+					width: 100%;
+					margin: 5px 0 5px 0;
+					padding: 3px 0;
+
+					outline: none; 
+					font-weight: 600;
+					border: none;
+					border-bottom: 1px solid #9a9a9a;
+					&:hover{
+						cursor: pointer;
+					}
+				}
+				.down-arrow{
+					position: absolute;
+					top: 7px;
+					right: 3px;
+					pointer-events: none;
+					
+					color: #c9b027;
+					font-size: 21px;
+				}
+			}
+			input{
+				width: 100%;
+				margin: 5px 0;
+				padding: 6px 0;
+
+				font-weight: 600;
+				outline: none;
+				border: none; 
+				border-bottom: 1px solid #9a9a9a;
+			}
+			.comments{
+				margin-top: 23px;
+			}
+			.send-app{
+				width: 190px;
+				margin-top: 20px;
+				padding: 12px 0;
+				
+				font-size: 11px;
+				font-weight: 800;
+				text-transform: uppercase;
+				outline: none;
+				border: 3px solid #00adcc;
+				background: white;
+				&:hover{
+					cursor: pointer;
+					color: white;
+					background: #00adcc;
+					transition: 0.3s;
+				}
+				&:hover > .send-app-arrow{
+					color: white;
+				}
+				.send-app-arrow{
+					margin-left: 17px;
+					color: #c9b027;
+					font-size: 13px;
+				}
+			}
+		}
+	}
+}
+
+
+
 //MEDIA QUERIES
 @media screen and (max-width: 800px) {
 	.course-info-wrapper{
@@ -591,6 +782,7 @@
 					}
 					.register-section{
 						.register-course-btn{
+							width: 100%;
 							margin-top: 15px;
 							padding: 5px 0;
 							font-size: 14px;
@@ -600,6 +792,7 @@
 							border: 2px solid #00BFFF;
 							background: #00BFFF;
 							color: white;
+							user-select: none;
 							&:hover{
 								background: white;
 								color: #00BFFF;
@@ -612,6 +805,7 @@
 							}
 						}
 						.order-consultation-btn{
+							width: 100%;
 							margin-top: 5px;
 							padding: 5px 0;
 							font-size: 14px;
@@ -697,5 +891,8 @@
 			bottom: 40px;
   			left: 20px;
 		}
+	}
+	.become-student-btn{
+			padding: 10px 0 25px 0;
 	}
 }
